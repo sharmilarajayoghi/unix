@@ -1,0 +1,242 @@
+UNIX Commands:
+
+rajayoghi@RAJAYOGHI:~$ whoami
+rajayoghi
+rajayoghi@RAJAYOGHI:~$ hostname
+RAJAYOGHI
+rajayoghi@RAJAYOGHI:~$
+rajayoghi@RAJAYOGHI:~$ pwd
+/home/rajayoghi
+rajayoghi@RAJAYOGHI:~$ ls
+test.txt  test1.txt  test5.txt
+rajayoghi@RAJAYOGHI:~$ ls -lrt
+total 0
+-rw-rw-r-- 1 rajayoghi rajayoghi 0 Apr 26 16:19 test.txt
+-rw-rw-r-- 1 rajayoghi rajayoghi 0 Apr 26 16:20 test1.txt
+-rw-rw-r-- 1 rajayoghi rajayoghi 0 Apr 26 16:20 test5.txt
+rajayoghi@RAJAYOGHI:~$ rm -f test.txt
+rajayoghi@RAJAYOGHI:~$ ls -ltr
+total 0
+-rw-rw-r-- 1 rajayoghi rajayoghi 0 Apr 26 16:20 test1.txt
+-rw-rw-r-- 1 rajayoghi rajayoghi 0 Apr 26 16:20 test5.txt
+rajayoghi@RAJAYOGHI:~$ rm -f *.txt
+rajayoghi@RAJAYOGHI:~$ ls -ltr
+total 0
+rajayoghi@RAJAYOGHI:~$
+rajayoghi@RAJAYOGHI:~/sharmila/meerah$ head -3 test123.txt
+test 1
+test 2
+test 3
+rajayoghi@RAJAYOGHI:~/sharmila/meerah$ tail -3 test123.txt
+test 5
+test 6
+test 7
+rajayoghi@RAJAYOGHI:~/sharmila/meerah$ cat test123.txt
+test 1
+test 2
+test 3
+test 4
+test 5
+test 6
+test 7
+rajayoghi@RAJAYOGHI:~$ cp /home/rajayoghi/test5-file.txt /home/rajayoghi/sharmila/meerah/.
+rajayoghi@RAJAYOGHI:~$ cp /home/rajayoghi/test6-file.txt /home/rajayoghi/sharmila/meerah/abc.dat
+
+rajayoghi@RAJAYOGHI:~/sharmila$ ls -ltr *.xls
+
+rajayoghi@RAJAYOGHI:~$ ls -ltr *test*
+rajayoghi@RAJAYOGHI:~$ ls -ltr *even*
+
+rajayoghi@RAJAYOGHI:~$ ls -ltr test*
+rajayoghi@RAJAYOGHI:~$ ls -ltr *est*
+rajayoghi@RAJAYOGHI:~$ ls -ltr *est*.xls
+
+
+rajayoghi@RAJAYOGHI:~/sharmila/meerah$ cp /home/rajayoghi/sharmila/meerah/*.xls /home/rajayoghi/sharmila/.
+
+rajayoghi@RAJAYOGHI:/home$ cd -
+
+rajayoghi@RAJAYOGHI:~/sharmila$ mv /home/rajayoghi/sharmila/*.xls /home/rajayoghi/
+
+display date:
+rajayoghi@RAJAYOGHI:~$ date
+print:
+rajayoghi@RAJAYOGHI:~$ echo "this is my lap" >> test.txt
+rajayoghi@RAJAYOGHI:~$ echo
+
+create history:
+rajayoghi@RAJAYOGHI:~$ history
+
+
+list only directories:
+rajayoghi@RAJAYOGHI:~$ ls -d * /
+rajayoghi@RAJAYOGHI:~$ ls -ltr -d */
+
+zip the file:
+rajayoghi@RAJAYOGHI:~$ gzip test.txt
+rajayoghi@RAJAYOGHI:~$ ls -ltr
+
+un zip the file:
+rajayoghi@RAJAYOGHI:~$ gunzip test.txt.gz
+rajayoghi@RAJAYOGHI:~$ ls -ltr
+//
+rajayoghi@RAJAYOGHI:~$ ls -ltr *test*
+-rw-rw-r-- 1 rajayoghi rajayoghi  15 Apr 28 17:27 test22-file.xls
+-rw-rw-r-- 1 rajayoghi rajayoghi  15 Apr 28 17:42 test23-file.xls
+-rw-rw-r-- 1 rajayoghi rajayoghi 349 Apr 28 21:52 test5-file.txt
+-rw-rw-r-- 1 rajayoghi rajayoghi  26 Apr 28 21:57 test6-file.txt
+-rw-rw-r-- 1 rajayoghi rajayoghi  26 Apr 28 22:04 test7-file.txt
+-rw-rw-r-- 1 rajayoghi rajayoghi  26 Apr 28 22:07 test89.txt
+-rw-rw-r-- 1 rajayoghi rajayoghi   0 Apr 29 12:20 test99-file.txt
+-rw-rw-r-- 1 rajayoghi rajayoghi  15 Apr 29 22:28 test.txt
+rajayoghi@RAJAYOGHI:~$ ls -ltr *even*
+-rw-rw-r-- 1 rajayoghi rajayoghi 35 Apr 29 15:59 eventhead.txt
+-rw-rw-r-- 1 rajayoghi rajayoghi 17 Apr 29 16:02 event.txt
+-rw-rw-r-- 1 rajayoghi rajayoghi 18 Apr 29 16:06 evenhead.txt
+rajayoghi@RAJAYOGHI:~$ ls -ltr test*
+-rw-rw-r-- 1 rajayoghi rajayoghi  15 Apr 28 17:27 test22-file.xls
+-rw-rw-r-- 1 rajayoghi rajayoghi  15 Apr 28 17:42 test23-file.xls
+-rw-rw-r-- 1 rajayoghi rajayoghi 349 Apr 28 21:52 test5-file.txt
+-rw-rw-r-- 1 rajayoghi rajayoghi  26 Apr 28 21:57 test6-file.txt
+-rw-rw-r-- 1 rajayoghi rajayoghi  26 Apr 28 22:04 test7-file.txt
+-rw-rw-r-- 1 rajayoghi rajayoghi  26 Apr 28 22:07 test89.txt
+-rw-rw-r-- 1 rajayoghi rajayoghi   0 Apr 29 12:20 test99-file.txt
+-rw-rw-r-- 1 rajayoghi rajayoghi  15 Apr 29 22:28 test.txt
+rajayoghi@RAJAYOGHI:~$ ls -ltr *est*
+-rw-rw-r-- 1 rajayoghi rajayoghi  15 Apr 28 17:27 test22-file.xls
+-rw-rw-r-- 1 rajayoghi rajayoghi  15 Apr 28 17:42 test23-file.xls
+-rw-rw-r-- 1 rajayoghi rajayoghi 349 Apr 28 21:52 test5-file.txt
+-rw-rw-r-- 1 rajayoghi rajayoghi  26 Apr 28 21:57 test6-file.txt
+-rw-rw-r-- 1 rajayoghi rajayoghi  26 Apr 28 22:04 test7-file.txt
+-rw-rw-r-- 1 rajayoghi rajayoghi  26 Apr 28 22:07 test89.txt
+-rw-rw-r-- 1 rajayoghi rajayoghi   0 Apr 29 12:20 test99-file.txt
+-rw-rw-r-- 1 rajayoghi rajayoghi  15 Apr 29 22:28 test.txt
+rajayoghi@RAJAYOGHI:~$ ls -ltr *est*.xls
+-rw-rw-r-- 1 rajayoghi rajayoghi 15 Apr 28 17:27 test22-file.xls
+-rw-rw-r-- 1 rajayoghi rajayoghi
+////
+grep command:
+(searching patterns with in files, it is powerful used to finding lines in textfiles that match regular expression and string
+search for word in a file:
+rajayoghi@RAJAYOGHI:~/sharmila/meerah$ grep "book" proDemo3.txt
+search case-insenstive:
+rajayoghi@RAJAYOGHI:~/sharmila/meerah$ grep -i "book" proDemo3.txt
+show line numbers:
+rajayoghi@RAJAYOGHI:~/sharmila/meerah$ grep -n "book" proDemo3.txt
+rajayoghi@RAJAYOGHI:~/sharmila/meerah$ grep -i -n "book" proDemo3.txt
+
+count numbers of matches lines:
+rajayoghi@RAJAYOGHI:~/sharmila/meerah$ grep -i -c "book" proDemo3.txt
+rajayoghi@RAJAYOGHI:~/sharmila/meerah$ grep -c "book" proDemo3.txt
+invert match(show lines not matches:
+rajayoghi@RAJAYOGHI:~/sharmila/meerah$ grep -v "book" proDemo3.txt
+rajayoghi@RAJAYOGHI:~/sharmila/meerah$ grep -i -v "book" proDemo3.txt
+
+search recursively in directories:(search for "book" in all files under the given directory)
+
+rajayoghi@RAJAYOGHI:~$ grep -r "book" /home/rajayoghi
+rajayoghi@RAJAYOGHI:~$ grep -i -r "book" /home/rajayoghi
+
+///
+rajayoghi@RAJAYOGHI:~$ grep -r "book" /home/rajayoghi
+/home/rajayoghi/proDemo1.txt:my hubbies is reading book
+/home/rajayoghi/proDemo1.txt:Book -reading book many information gatharing
+/home/rajayoghi/proDemo1.txt:i have many favorite book
+grep: /home/rajayoghi/sharmila/.text1.xls.swp: binary file matches
+/home/rajayoghi/sharmila/proDemo2.txt:i read many book types of yoga
+/home/rajayoghi/sharmila/proDemo2.txt:book reading interseted
+/home/rajayoghi/sharmila/meerah/proDemo3.txt:book reading is creating more knowedlge
+/home/rajayoghi/sharmila/meerah/proDemo3.txt:book - many person hubby so BOOK realted video available in open source
+/home/rajayoghi/sharmila/meerah.:this is your note book
+////
+rajayoghi@RAJAYOGHI:~$ grep -i -r "book" /home/rajayoghi
+/home/rajayoghi/proDemo1.txt:my hubbies is reading book
+/home/rajayoghi/proDemo1.txt:everyday bed time i must raed Book
+/home/rajayoghi/proDemo1.txt:Book -reading book many information gatharing
+/home/rajayoghi/proDemo1.txt:i have many favorite book
+grep: /home/rajayoghi/sharmila/.text1.xls.swp: binary file matches
+/home/rajayoghi/sharmila/proDemo2.txt:i read many book types of yoga
+/home/rajayoghi/sharmila/proDemo2.txt:BOOK yoga
+/home/rajayoghi/sharmila/proDemo2.txt:book reading interseted
+/home/rajayoghi/sharmila/meerah/proDemo3.txt:book reading is creating more knowedlge
+/home/rajayoghi/sharmila/meerah/proDemo3.txt:book - many person hubby so BOOK realted video available in open source
+/home/rajayoghi/sharmila/meerah/proDemo3.txt:Book -improve thinking and your thought
+/home/rajayoghi/sharmila/meerah.:this is your note book
+
+rajayoghi@RAJAYOGHI:~/sharmila$ grep -i -r "book" /home/rajayoghi/sharmila
+grep: /home/rajayoghi/sharmila/.text1.xls.swp: binary file matches
+/home/rajayoghi/sharmila/proDemo2.txt:i read many book types of yoga
+/home/rajayoghi/sharmila/proDemo2.txt:BOOK yoga
+/home/rajayoghi/sharmila/proDemo2.txt:book reading interseted
+/home/rajayoghi/sharmila/meerah/proDemo3.txt:book reading is creating more knowedlge
+/home/rajayoghi/sharmila/meerah/proDemo3.txt:book - many person hubby so BOOK realted video available in open source
+/home/rajayoghi/sharmila/meerah/proDemo3.txt:Book -improve thinking and your thought
+/home/rajayoghi/sharmila/meerah.:this is your note book
+
+rajayoghi@RAJAYOGHI:~/sharmila/meerah$ grep -i -r /home/rajayoghi/sharmila/meerah
+rajayoghi@RAJAYOGHI:~/sharmila/meerah$ grep -i -r "book" /home/rajayoghi/sharmila/meerah
+/home/rajayoghi/sharmila/meerah/proDemo3.txt:book reading is creating more knowedlge
+/home/rajayoghi/sharmila/meerah/proDemo3.txt:book - many person hubby so BOOK realted video available in open source
+/home/rajayoghi/sharmila/meerah/proDemo3.txt:Book -improve thinking and your thought
+
+search for whole word:
+rajayoghi@RAJAYOGHI:~/sharmila/meerah$ grep "^book" proDemo3.txt
+//
+rajayoghi@RAJAYOGHI:~/sharmila/meerah$ grep "^book" proDemo3.txt
+book reading is creating more knowedlge
+book - many person hubby so BOOK realted video available in open source
+rajayoghi@RAJAYOGHI:~/sharmila/meerah$
+///
+
+///////
+my hubbies is reading book
+everyday bed time i must raed Book
+Book -reading book many information gatharing
+i have many favorite book
+mind relaxing feel fresh
+rajayoghi@RAJAYOGHI:~$ cd sharmila
+rajayoghi@RAJAYOGHI:~/sharmila$ cd meerah
+rajayoghi@RAJAYOGHI:~/sharmila/meerah$ ls
+abc.dat  home.txt  proDemo3.txt  wallmart
+rajayoghi@RAJAYOGHI:~/sharmila/meerah$ grep "book" proDemo3.txt
+book reading is creating more knowedlge
+book - many person hubby so BOOK realted video available in open source
+rajayoghi@RAJAYOGHI:~/sharmila/meerah$ grep -i "book" proDemo3.txt
+book reading is creating more knowedlge
+book - many person hubby so BOOK realted video available in open source
+Book -improve thinking and your thought
+rajayoghi@RAJAYOGHI:~/sharmila/meerah$ grep -n "book" proDemo3.txt
+1:book reading is creating more knowedlge
+3:book - many person hubby so BOOK realted video available in open source
+rajayoghi@RAJAYOGHI:~/sharmila/meerah$ grep -c "book" proDemo3.txt
+2
+rajayoghi@RAJAYOGHI:~/sharmila/meerah$ grep -i -c "book" proDemo3.txt
+3
+rajayoghi@RAJAYOGHI:~/sharmila/meerah$ grep -i -n "book" proDemo3.txt
+1:book reading is creating more knowedlge
+3:book - many person hubby so BOOK realted video available in open source
+4:Book -improve thinking and your thought
+rajayoghi@RAJAYOGHI:~/sharmila/meerah$ grep -v "book" proDemo3.txt
+must read every day ataleast per hours
+Book -improve thinking and your thought
+rajayoghi@RAJAYOGHI:~/sharmila/meerah$ grep -i -v "book" proDemo3.txt
+must read every day ataleast per hours
+////////
+word same directory but different extation:
+rajayoghi@RAJAYOGHI:~$ grep -i "book" *.*
+///
+rajayoghi@RAJAYOGHI:~$ grep -i "book" *.*
+proDemo1.txt:my hubbies is reading book
+proDemo1.txt:everyday bed time i must raed Book
+proDemo1.txt:Book -reading book many information gatharing
+proDemo1.txt:i have many favorite book
+proDemo2.xls:book is good thing to read
+proDemo2.xls:heavy hard book
+proDemo2.xls:BOOK art
+///
+line count:
+rajayoghi@RAJAYOGHI:~$ wc -l demofile2.txt
+
+
+
+

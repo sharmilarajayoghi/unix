@@ -1,0 +1,318 @@
+whoami
+hostname
+id
+pwd
+id
+date
+history
+cat
+vim
+vimdiff
+touch
+echo
+head
+tail 
+less/more
+ls -ltr
+find
+grep
+man
+mkdir
+rmdir
+rm
+cp
+mv
+zip
+unzip
+cd
+cd ../
+chmod
+sed
+clear
+ls -ltr -d */ -find dirctories
+wc -l filename
+cut
+--------------------------------------------------
+vi
+
+vi (editor commands:)
+insert -i, 
+esc ,
+save -shift+zz (quit the file with save) 
+donot save -:q (quit the file without save)
+find a word = esc after /
+find next same word = n
+--------------------------------------------------
++------------------------------------------------------------------------------------------------------------------------------+
+
+whoami- (display the system current username)
+
+result:
+rajayoghi@RAJAYOGHI:~/aba3/datafile$ whoami
+rajayoghi
+
+hostname- (display system current hostname(or)servername)
+result:
+rajayoghi@RAJAYOGHI:~/aba3/datafile$ hostname
+RAJAYOGHI
+ 
+ id- it display user id/ group id.
+ 
+ result:
+ uid=1000(rajayoghi) gid=1000(rajayoghi) groups=1000(rajayoghi),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),100(users)
+
+
+
+pwd- present working directory(display the present working directory path)
+
+result:
+rajayoghi@RAJAYOGHI:~$ pwd
+/home/rajayoghi
+
+ls -list the files and directory (without details)
+
+result:
+rajayoghi@RAJAYOGHI:~/sharmila/meerah$ ls
+abc.dat  home.txt  proDemo3.txt  wallmart
+
+ls -ltr (list the files and directory with details)
+
+
+result:
+rajayoghi@RAJAYOGHI:~/sharmila/meerah$ ls -ltr
+total 16
+drwxrwxr-x 2 rajayoghi rajayoghi 4096 Apr 28 14:12 wallmart
+-rw-rw-r-- 1 rajayoghi rajayoghi   26 Apr 28 22:20 abc.dat
+-rw-rw-r-- 1 rajayoghi rajayoghi   47 May  2 17:30 home.txt
+-rw-rw-r-- 1 rajayoghi rajayoghi  229 May  5 21:30 proDemo3.txt
+
+cat welocome.txt (view or display the file content but not edited just view only)
+
+result:
+rajayoghi@RAJAYOGHI:~/sharmila/meerah$ cat welcome.txt
+meerah
+
+vi welocome.txt(opens vi test editor insert the data)
+
+result:
+rajayoghi@RAJAYOGHI:~/sharmila/meerah$ vi welcome.txt
+editor open then insert the data save it here.
+
+vim welcome.txt -(enhanced mordern version ,vi that adds ton of features) 
+
+vimdiff file1.txt file2.txt- compare two or more files side by side)
+
+
+echo "Meerah" (It display text/word or sentence in command line interface)  
+
+result:
+rajayoghi@RAJAYOGHI:~/sharmila/meerah$ echo "hey meerah"
+hey meerah
+
+echo "meerah">>welcome.txt (adding the text meerah to the end of the file welcome.txt)
+rajayoghi@RAJAYOGHI:~/sharmila/meerah$ cat welcome.txt
+meera
+
+result:
+rajayoghi@RAJAYOGHI:~/sharmila/meerah$ echo "meerah">>welcome.txt
+rajayoghi@RAJAYOGHI:~/sharmila/meerah$ cat welcome.txt
+meerah
+
+echo hostname- (It display the text hostaname)
+
+result:
+rajayoghi@RAJAYOGHI:~/sharmila/meerah$ echo hostaname
+hostaname
+
+echo `hostname` -(It display the keyfunction name)
+result:
+rajayoghi@RAJAYOGHI:~/sharmila/meerah$ echo `hostname`
+RAJAYOGHI
+
+echo date-(It display the text Date)
+
+result:
+rajayoghi@RAJAYOGHI:~/sharmila/meerah$ echo date
+date
+
+echo `date -(It display the keyfunction details)
+
+result:
+rajayoghi@RAJAYOGHI:~/sharmila/meerah$ echo `date`
+Tue May 6 14:06:06 EDT 2025
+
+
+echo "script data_load.py started on `date`"
+
+result:
+rajayoghi@RAJAYOGHI:~/sharmila/meerah$ echo "script data_load.py started on `date`"
+script data_load.py started on Tue May  6 14:09:13 EDT 2025
+
+echo "script data_load.py completed on `date`"
+
+history - (display the full history to the command line interface)-review all commands.
+
+Date- (display the current date and time to the command line interface)
+
+result:
+rajayoghi@RAJAYOGHI:~/sharmila/meerah$ date
+Tue May  6 14:11:44 EDT 2025
+
+cd sharmila (navigate the directory)
+
+cd ../ (backward navigate the directory)
+
+
+Touch welcome.txt (create a empty file) 
+
+mkdir sharmila (create a new directory)
+
+rmdir sharmila (remove the directory)
+
+rm file.txt -(remove the file.txt files)
+rm sharmila - (Remove the sharmila dirctories)
+
+rm -f *.txt
+
+cp (copy files or directory)
+
+cp /home/rajayoghi/sharmila/text1file.txt /home/rajayoghi/sharmila/meerah/*
+cp /home/rajayoghi/sharmila/text1file.txt /home/rajayoghi/sharmila/meerah/mng.txt
+
+mv (Move or rename files or directory)
+
+mv /home/rajayoghi/sharmila/text1file.txt /home/rajayoghi/sharmila/meerah/*
+mv /home/rajayoghi/sharmila/text1file.txt /home/rajayoghi/sharmila/meerah/mng.txt
+
+man - cd (support to help)-display manual page
+
+
+less/more test.txt (view file with scroll)
+
+head test.txt (show first 10 line)
+
+tail test.txt (show last 10 lines)
+
+clear - (remove all the prevoius output from the screen)
+
+grep -(search pattern within files)
+
+grep "book" file.txt (search a word in a file)
+grep  -i "book" file.txt(case insensive search)
+grep -i -n "book" file.txt(show the line numbers)
+grep -i -c "book" file.txt(count the number of matches)
+grep -v "book" file.txt (invert match)
+grep -w file.txt (search for whole words only)
+grep "^apple" file.txt (use regular expression)
+
+grep -i "book" /home/sharmila/meerah (if you know the directories search the text )
+
+grep -i "book" /home/*/datafile/*.*(if you dont know the dirctories search the text)
+
+
+
+
+zip the file:
+rajayoghi@RAJAYOGHI:~$ gzip test.txt
+rajayoghi@RAJAYOGHI:~$ ls -ltr
+
+un zip the file:
+rajayoghi@RAJAYOGHI:~$ gunzip test.txt.gz
+rajayoghi@RAJAYOGHI:~$ ls -ltr
+
+list only directories:
+rajayoghi@RAJAYOGHI:~$ ls -d * /
+rajayoghi@RAJAYOGHI:~$ ls -ltr -d */
+
+
+ls -ltr *est*.xls
+ls -ltr *test*
+
+wc -l demofile2.txt (It display line count) 
+
+chmod- it is used to change the access permission of files and directories :change mode" 
+
+permission  symbolic Notation: (unix file (or)directories permissions are using three sets of three bits)
+each set (user.group,others)
+
+U - owner of thr file
+g -group the file
+O-other  user(not owner, and group)
+
+
+r- read permission
+w write permission
+x- Execute permission exectly.
+
++ = Adds a permission
+- = Remove a permission
+= - Sets permissions exactly.
+
+chmod 777 - give read,write,and execute permission for everyone.(all can read/write/execute -full access)
+
+numeric representation:
+user- rwx =4+2+1 =7
+group r-x = 4+0+1=5
+others r-- =4+0+0=4
+
+
+find command:
+
+rajayoghi@RAJAYOGHI:~$ find /home -name "demofile.txt"
+
+result:
+/home/rajayoghi/demofile.txt
+/home/rajayoghi/sharmila/demofile.txt
+
+rajayoghi@RAJAYOGHI:~/sharmila/meerah$ find /home/rajayoghi/sharmila/meerah -name "*.txt"
+
+result:
+/home/rajayoghi/sharmila/meerah/friend.txt
+/home/rajayoghi/sharmila/meerah/gp.txt
+
+rajayoghi@RAJAYOGHI:~/sharmila/meerah$ find /home/rajayoghi/sharmila/meerah -name "*"
+
+result:
+/home/rajayoghi/sharmila/meerah/friend.txt
+/home/rajayoghi/sharmila/meerah/*
+/home/rajayoghi/sharmila/meerah/gp.txt
+
+rajayoghi@RAJAYOGHI:~$ find /home/rajayoghi -name "*est*.txt"
+
+result:
+/home/rajayoghi/test5-file.txt
+/home/rajayoghi/test7-file.txt
+/home/rajayoghi/test123.txt
+/home/rajayoghi/test99-file.txt
+/home/rajayoghi/test.txt
+/home/rajayoghi/aba3/datafile/test5.txt
+/home/rajayoghi/test89.txt
+
+find and delete files:
+
+rajayoghi@RAJAYOGHI:~$ find /home/rajayoghi -name "*.xls" -delete
+
+find files and execute :
+
+
+fimd files by type (directories):
+find /home/rajayoghi  -type d
+
+find files modified in last 7 days:
+find /home/rajayoghi -mtime -7
+
+cut commamd:-(extract specific sections)-extracts characters 1 to 5 from each line.
+rajayoghi@RAJAYOGHI:~/sharmila/sirram$ cut -c 1-4 tenth.txt
+
+result:
+real
+must
+
+rajayoghi@RAJAYOGHI:~/sharmila/sirram$  echo "apple ,mango,cherry,watermalon,sapota" | cut -d ',' -f 4
+watermalon
+ 
+ 
+ //awk command: unix powerful text processing tool -pattern scanning procssing and reporting tool.
+ sed command: stream editor- short form
+             - in unix used to text transform from file or pipeline//
+
